@@ -67,4 +67,8 @@ public class GameOfLife {
         if (!is_valid_position(row, col)) return false;
         else return grid[row][col];
     }
+
+    public void changeCellStateAt(int row, int col) {
+        if (is_valid_position(row, col)) grid[row][col] = !grid[row][col];
+    }
 }
